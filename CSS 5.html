@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 5</title>
+    <style>
+        .container{
+            padding: 30px;
+        }
+        .div1 {
+            padding-top: 100px;
+            background: rgb(145, 127, 98);
+        }
+
+        .div1,
+        .div2,
+        .div3,
+        .div4 {
+            padding: 16px;
+        }
+
+        .div2,
+        .div3,
+        .div4 {
+            background-image: linear-gradient(rgba(158, 125, 125, 0.527), rgb(138, 118, 84));
+            border-top: 0.5px solid black;
+        }
+
+        select {
+            padding: 4px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .inputs {
+            margin-bottom: 15px;
+        }
+        input{
+            border-top: 2px solid black;
+        }
+
+        .help {
+            color: rgb(119, 109, 109);
+        }
+
+        input[type=submit] {
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-image: linear-gradient(rgb(180, 255, 42), rgb(48, 138, 52));
+            padding: 12px 20px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            
+                <h1><b>Create an Account</b></h1>
+                <p>Just fill in the information below and let us know if you <a href="#">need help.</a></p>
+        </div>
+        <div class="div2">
+            <h2>Tell us about yourself</h2>
+            <div class="name">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+
+            <div class="name">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+
+            <div class="name">
+                <label for="email">Email Address</label>
+            </div>
+            <div class="inputs">
+                <input type="email">
+            </div>
+
+            <p class="help">We will not sell or spam your email address.</p>
+
+            <div class="name">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="inputs">
+                <select name="Gender" id="gender">
+                    <option value="">--Select One--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="name">
+                <label for="country">I live in</label>
+            </div>
+            <div class="inputs">
+                <select name="Country" id="country">
+                    <option value="India">India</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South korea">South korea</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="name">
+                <label for="postal_code">Postal Code</label>
+            </div>
+            <div class="inputs">
+                <input type="text" style="width: 85px;">
+            </div>
+        </div>
+        <div class="div3">
+            <h2>Select an ID and password</h2>
+            <div class="name">
+                <label for="user_id">User ID</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+            <p class="help">5 characters minimum.</p>
+            <div class="name">
+                <label for="passwor">Password</label>
+            </div>
+
+            <div class="inputs">
+                <input type="password">
+            </div>
+            <p class="help">5 characters minimum, must include a special character. Example: secr3t</p>
+
+            <div class="name">
+                <label for="retype_password">Retype Password</label>
+            </div>
+            <div class="inputs">
+                <input type="password">
+            </div>
+        </div>
+        <div class="div4">
+            <input type="submit" value="Create Account"> | <a>Cancel</a>
+        </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
