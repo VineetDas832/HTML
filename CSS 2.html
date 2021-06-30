@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 1px;
+            padding: 1px;
+            border: 50px rgb(57, 66, 43) solid;
+        }
+        header{
+            border-bottom: 1px solid black;
+        }
+        footer{
+            border-top: 1px solid black;
+        }
+        header, footer{
+            
+            height: 20vh;
+            background-color: rgb(78, 94, 10);
+            color: bisque;
+        }
+        section{
+            width: 40%;
+            float: left;
+            height: 60vh;
+            background-color: rgb(158, 156, 40);
+        }
+        .right{
+            width: 60%;
+            float: right;
+            height: 60vh;
+            background-color: rgb(216, 181, 117);
+        }
+        .main::after{
+            content:"";
+            clear: both;
+            display: table;
+        }
+        p{
+            padding: 30px;
+            font-size: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header><p>Two column layout</p></header>
+    
+    <div class="main">
+        <section></section>
+        <aside class="right"></aside>
+    </div>
+    
+    <footer></footer>
+        
+    </div>
+</body>
+</html>
